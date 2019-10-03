@@ -9,7 +9,7 @@ import numpy as np
 # DRAG = 4.
 
 GRAV = 1.
-DRAG = 0.001 
+DRAG = 0.001
 
 ################################################################################
 # DEFINICION DE CLASES Y FUNCIONES
@@ -40,6 +40,13 @@ class Particle:
 
     def get_state(self):
         return self.x, self.y, self.vx, self.vy, self.t
+
+    def set_state(self, x, y, vx, vy, t):
+        self.x = x
+        self.y = y
+        self.vx = vx
+        self.vy = vy
+        self.t = t
 
 
     # def euler_step(self, dt):

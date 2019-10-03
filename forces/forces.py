@@ -8,19 +8,19 @@
 
 class Forces:
 
-    def __init__(self, user_force, simul_params):
-        self.force = user_force
-        self.params = simul_params
-        self.state = None
+	def __init__(self, user_force, simul_params):
+		self.force = user_force
+		self.params = simul_params
+		self.state = None
 
 
-    def get_state(self):
-        return self.state
+	def get_state(self):
+		return self.state
 
 
-    def get_force(self, state):
-        self.state = state
-        return self.force(state, self.params)
+	def get_force(self, state):
+		self.state = state
+		return self.force(state, self.params)
 
 
 ################################################################################
